@@ -1,14 +1,14 @@
 import { PostsActionsType } from "../actions/fetchPostsDataAction";
-import { ActionsType, ReducerType } from "../types/types";
+import { ActionsType, RedecerPostType } from "../types/types";
 
-const initialState: ReducerType = {
+const initialState: RedecerPostType = {
   posts: [],
 };
 
 const postReducer = (
   state = initialState,
   action: ActionsType
-): ReducerType => {
+): RedecerPostType => {
   switch (action.type) {
     case PostsActionsType.fetchPostsData:
       return {

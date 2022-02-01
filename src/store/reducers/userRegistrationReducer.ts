@@ -1,14 +1,14 @@
 import { UsersActionsType } from "../actions/userRegistrationAction";
-import { ActionsType, ReducerType } from "../types/types";
+import { ActionsType, RedecerUserType } from "../types/types";
 
-const initialState: ReducerType = {
+const initialState: RedecerUserType = {
   user: { lastName: "", firstName: "" },
 };
 
 const userRegistrationReducer = (
   state = initialState,
   action: ActionsType
-): ReducerType => {
+): RedecerUserType => {
   switch (action.type) {
     case UsersActionsType.userRegistration:
       return {

@@ -13,7 +13,10 @@ export type RedecerPostType = {
   posts: PostsDataType;
 };
 
-export type ReducerType = RedecerUserType | RedecerPostType;
+export type ReducerType = {
+  userRegistrationReducer: RedecerUserType;
+  postReducer: RedecerPostType;
+};
 
 export type ActionsType =
   | FetchPostsDataActionType
